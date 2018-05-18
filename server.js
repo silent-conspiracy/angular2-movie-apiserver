@@ -11,6 +11,7 @@ app.use(function(req, res, next){
 });
 
 app.use('/api', api);
+app.use('/', express.static('dist'));
 app.listen(3000, '0.0.0.0', function() {
     console.log("Server started on port 3000");
 });
